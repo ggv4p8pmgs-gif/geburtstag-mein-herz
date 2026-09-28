@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Alles Gute zum Geburtstag mein Herz</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=UnifrakturCook:wght@700&display=swap');
+:root{--green:#163c2b;--green2:#244f3a;--cream:#efe6d2;--paper:#f6eddc;--ink:#29372f;--gold:#9c7b42;--wax:#6f1f24;--script:'Arkana','Parisienne','URW Chancery L','Brush Script MT',cursive}
+*{box-sizing:border-box} body{margin:0;background:#102a20;color:var(--ink);font-family:var(--script)}
+#app{min-height:100vh;background:radial-gradient(circle at 50% 8%,#315e48 0,#173c2c 35%,#102a20 72%);display:flex;align-items:center;justify-content:center;padding:28px;overflow:hidden;position:relative}
+#app:before,#app:after{content:'✦';position:absolute;color:#d4b77a55;font-size:24px;animation:float 5s ease-in-out infinite;left:12%;top:18%}#app:after{content:'❦';left:auto;right:10%;top:72%;font-size:38px;animation-delay:1.7s}
+.scene{width:min(920px,100%);min-height:650px;display:flex;align-items:center;justify-content:center;position:relative}
+.home{text-align:center;color:#f1e7d2;transition:.8s ease;position:relative}.home.hidden{opacity:0;transform:scale(.96);pointer-events:none;position:absolute}
+h1{font-family:var(--script);font-size:clamp(3rem,8vw,6rem);font-weight:400;margin:0 0 18px;letter-spacing:.01em;text-shadow:0 3px 18px #07140e;animation:titleIn 1.4s ease both}
+.intro{font-family:var(--script);font-size:clamp(1.35rem,3vw,1.85rem);margin:0 auto 38px;max-width:650px;line-height:1.45;animation:fadeUp 1.4s .25s ease both}
+.envelope-wrap{cursor:pointer;display:inline-block;filter:drop-shadow(0 20px 25px #07140e99)}
+.envelope{width:min(470px,82vw);height:285px;position:relative;background:#d9c39a;border:1px solid #a98c59;border-radius:4px;box-shadow:inset 0 0 0 7px #e8d7b5, inset 0 0 0 9px #b49763;overflow:visible}
+.envelope:before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 49.5%,#c9ae7e 50%,transparent 50.5%),linear-gradient(225deg,transparent 49.5%,#c9ae7e 50%,transparent 50.5%);opacity:.75}
+.flap{position:absolute;left:0;top:0;width:100%;height:58%;background:#e2cfaa;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;z-index:4;transition:1s ease;box-shadow:0 3px 5px #6e573755}
+.seal{position:absolute;z-index:6;left:50%;top:51%;transform:translate(-50%,-50%);width:76px;height:76px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#8f3337,#5c151b 70%);box-shadow:inset 5px 5px 8px #ad4a4f66,4px 6px 10px #44201577;display:grid;place-items:center;color:#d9b77a;font-size:28px;font-family:serif}
+.envelope.open .flap{transform:rotateX(180deg);z-index:1}.envelope.open .seal{opacity:0;transition:.3s}.hint{margin-top:16px;font-size:1.15rem;opacity:.8;animation:fadeUp 1.2s .7s ease both}
+.letter{position:absolute;width:min(720px,94vw);min-height:610px;background-color:var(--paper);background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 31px,#cbbd9e55 32px);padding:76px 76px 62px;box-shadow:0 25px 50px #06140dcc;border:1px solid #b79a68;opacity:0;transform:translateY(80px) scale(.86);pointer-events:none;transition:1s ease .25s;overflow:auto;max-height:88vh;clip-path:polygon(1% 1%,99% 0,100% 99%,98% 100%,1% 99%,0 2%);scrollbar-width:thin;scrollbar-color:#9c7b4266 transparent}
+.letter:before{content:'❦';position:absolute;inset:18px;border:0;pointer-events:none;color:#a98d5a;text-align:center;padding-top:9px;font-size:22px}.letter:after{display:none}.letter.show{opacity:1;transform:translateY(0) scale(1);pointer-events:auto}
+.letter h2{font-family:var(--script);font-size:2.7rem;font-weight:400;margin:0 0 30px;color:var(--green)}
+.letter p{font-family:var(--script);font-size:clamp(1.2rem,2.2vw,1.48rem);line-height:1.75;margin:0 0 24px;letter-spacing:.01em}.signature{text-align:right;font-family:var(--script);font-size:2.15rem;color:var(--green);margin-top:34px}.music{text-align:center;margin-top:30px;font-size:1rem;color:#66543a;font-style:italic}
+.close{position:absolute;right:28px;top:22px;border:0;background:transparent;color:var(--green);font-size:1.4rem;cursor:pointer;z-index:2}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-8deg);opacity:.35}50%{transform:translateY(-22px) rotate(8deg);opacity:.8}}@keyframes envelopeFloat{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-8px) rotate(.7deg)}}@keyframes titleIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media(max-width:600px){#app{padding:15px}.letter{padding:58px 40px 42px}.letter:before{inset:9px}.letter:after{left:25px}.envelope{height:235px}.seal{width:62px;height:62px;font-size:23px}}
+</style></head>
+<body><div id="app"><main class="scene">
+<section class="home" id="home"><h1>Alles Gute zum Geburtstag mein Herz!</h1><p class="intro">Zum heutigen Anlass habe ich dir was kleines vorbereitet.</p><div class="envelope-wrap" id="openBtn" aria-label="Brief öffnen"><div class="envelope" id="envelope"><div class="flap"></div><div class="seal">♥</div></div></div><div class="hint">Klicke auf den Umschlag</div></section>
+<article class="letter" id="letter"><button class="close" id="closeBtn" aria-label="Brief schließen">✕</button><h2>Mein Herz,</h2>
+<p>auch wenn es heute dein Geburtstag ist möchte ich mich bei dir vom ganzen Herzen bedanken. Das größte Geschenk welches unbezahlbar ist hast nämlich du mir gemacht. Du hast mir Frieden, Liebe und Respekt geschenkt. Du hast mich zu deiner Familie gemacht. Du hast all das geheilt, was du selbst nicht verursacht hast. Und vorallem hast du aus mir meine beste Version gemacht.</p>
+<p>Für mich ist mein größter Wunsch in Erfüllung gegangen, als du in mein Leben gekommen bist. Wenn ich in deine Augen schaue, sehe ich unsere gesamte Zukunft vor mir. Ich freue mich auf jeden Moment den wir gemeinsam auf dieser Erde noch erleben. Auf die guten und schlechten Tage. Auf jeden Morgen, den ich neben dir aufwachen darf. Auf unsere Kinder, die deine Augen bekommen sollen. Ich liebe dich unendlich mein Leben und bete jeden Tag für dich.</p>
+<div class="signature">In Liebe, Berrin ♥️</div><div class="music">♫ Toygar Işıklı – Aşk mühüru</div></article>
+</main></div>
+<script>const e=document.getElementById('envelope'),h=document.getElementById('home'),l=document.getElementById('letter');document.getElementById('openBtn').onclick=()=>{e.classList.add('open');setTimeout(()=>{h.classList.add('hidden');l.classList.add('show')},650)};document.getElementById('closeBtn').onclick=()=>{l.classList.remove('show');h.classList.remove('hidden');setTimeout(()=>e.classList.remove('open'),350)};</script>
+</body></html>
